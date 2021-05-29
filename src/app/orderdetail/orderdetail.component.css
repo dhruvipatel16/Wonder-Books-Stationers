@@ -1,0 +1,28 @@
+
+th{
+  font-size: large;
+  color:maroon;
+  border-bottom: solid black;
+}
+hr.new1 {
+  border-top: 10px solid red;
+  border-radius: 5px;
+  width: 80%;
+}
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 90%;
+}
+
+td, th {
+  width: 10%;
+}
+div.sign{
+  position: absolute;
+  top:100px;
+  left:300px;
+}

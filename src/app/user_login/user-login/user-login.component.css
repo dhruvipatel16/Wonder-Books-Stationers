@@ -1,0 +1,35 @@
+.example-card {
+  width: 500px;
+  height:500px;
+  color: black;
+  position: relative;
+  top:20%;
+  left:35%;
+
+  background-color: rgb(216, 201, 245);
+  border-radius: 10%;
+
+}
+
+.example-header-image {
+  /* background-image: url("C:\Users\Kashish\Pictures\iconContact.png"); */
+  background-size: cover;
+}
+.login_action{
+
+  position: relative;
+  top:100px;
+  left:100px;
+}
+
+.showPass
+{
+  color: brown;
+  position: relative;
+  top:10px;
+  left: 100px;
+}
+div.forgotpass{
+  color: blue;
+  text-decoration-line: underline;
+}

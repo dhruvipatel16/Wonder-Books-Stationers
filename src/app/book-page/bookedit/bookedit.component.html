@@ -1,0 +1,53 @@
+<div class="container">
+
+  <form [formGroup]="EditBookForm" (submit)="onSubmit()" class="container">
+
+    <div>
+      <mat-label>Book Name</mat-label>
+      <input formControlName="book_name" class="form-control" type="string"><br>
+    </div>
+
+    <div>
+      <mat-label>Book Category</mat-label>
+      <select formControlName="fk_cat_id" class="form-control">
+        <option *ngFor="let item of CategoryDataArr" [value]="item.category_id">
+          {{item.category_name}}</option>
+      </select>
+    </div>
+
+    <div>
+      <mat-label>Book Price</mat-label>
+      <input formControlName="product_price" class="form-control" type="number"><br>
+    </div>
+
+    <div>
+      <mat-label>Book Quantity</mat-label>
+      <input formControlName="product_qty" class="form-control" type="number"><br>
+    </div>
+
+    <div>
+      <mat-label>Standard</mat-label>
+      <input formControlName="standard" class="form-control" type="text"><br>
+    </div>
+
+    <div>
+      <mat-label>Book Description</mat-label>
+      <input formControlName="book_description" class="form-control" type="text"><br>
+    </div>
+
+    <div>
+      <mat-label>Book Publication</mat-label>
+      <input formControlName="book_publication" class="form-control" type="text"><br>
+    </div>
+
+    <div>
+      <img mat-card-image width="150" height="150" src="{{bookurl}}">
+      <input type="file" name="pic" (change)="onChange($event)">
+    </div>
+<br>
+    <div>
+      <button class="btn btn-primary" type="submit">Save</button> |
+      <button class="btn btn-primary" (click)="onCancel()">Cancel</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,97 @@
+<!-- <div *ngIf="orderDetailArr.length<1">
+  <img src="./../../assets/Loader.gif">
+</div> -->
+
+<button class="btn btn-primary" (click)="onClick()">Backto Order</button><br><br>
+
+<div>
+  <div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource">
+
+      <ng-container matColumnDef="order_id">
+        <th mat-header-cell *matHeaderCellDef>Order No</th>
+        <td mat-cell *matCellDef="let row"> {{row.order_id}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="customer_name">
+        <th mat-header-cell *matHeaderCellDef> Customer Name </th>
+        <td mat-cell *matCellDef="let row"> {{row.customer_name}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="order_amount">
+        <th mat-header-cell *matHeaderCellDef>Order Amount</th>
+        <td mat-cell *matCellDef="let row"> {{row.order_amount | currency:'INR'}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="order_date">
+        <th mat-header-cell *matHeaderCellDef>Order Date</th>
+        <td mat-cell *matCellDef="let row"> {{row.order_date | date}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="order_status">
+        <th mat-header-cell *matHeaderCellDef>Order Status</th>
+        <td mat-cell *matCellDef="let row"><button mat-button (click)="onStatusUpdate(row)"> {{row.order_status}}
+          </button></td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;">
+      </tr>
+    </table>
+  </div>
+  <br>
+  <div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource1">
+
+      <ng-container matColumnDef="product_name">
+        <th mat-header-cell *matHeaderCellDef>Product Name</th>
+        <td mat-cell *matCellDef="let row"> {{row.product_name}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="quantity">
+        <th mat-header-cell *matHeaderCellDef> Quantity </th>
+        <td mat-cell *matCellDef="let row"> {{row.quantity}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="product_price">
+        <th mat-header-cell *matHeaderCellDef>Product Price</th>
+        <td mat-cell *matCellDef="let row"> {{row.product_price | currency:'INR'}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns1"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns1;">
+      </tr>
+    </table>
+  </div>
+  <br>
+  <div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource2">
+
+      <ng-container matColumnDef="delivery_date">
+        <th mat-header-cell *matHeaderCellDef>Delivery Date</th>
+        <td mat-cell *matCellDef="let row"> {{row.delivery_date | date}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="employee_name">
+        <th mat-header-cell *matHeaderCellDef> Employee Name </th>
+        <td mat-cell *matCellDef="let row"> {{row.employee_name}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="employee_mobileno">
+        <th mat-header-cell *matHeaderCellDef>Employee Mobileno</th>
+        <td mat-cell *matCellDef="let row"> {{row.employee_mobileno}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="comment">
+        <th mat-header-cell *matHeaderCellDef>Comment</th>
+        <td mat-cell *matCellDef="let row"> {{row.comment}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns2"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns2;">
+      </tr>
+    </table>
+
+  </div>
+
+</div>

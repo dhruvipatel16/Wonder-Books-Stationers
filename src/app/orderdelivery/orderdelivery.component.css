@@ -1,0 +1,65 @@
+.t1 {
+  width: 100%;
+  /* margin-top: 0%; */
+}
+.t2 {
+  width: 100%;
+  margin-top: 10%;
+}
+
+td,
+th {
+  width: 35%;
+  height: 100%;
+}
+.mat-form-field {
+  font-size: 16px;
+  width: 100%;
+}
+/* th {
+  font-size: large;
+  color: maroon;
+  border-bottom: solid black;
+}
+hr.new1 {
+  border-top: 10px solid red;
+  border-radius: 5px;
+  width: 80%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+ */
+/* div.sign {
+  position: relative;
+  top: 100px;
+  left: 300px;
+}
+.left {
+  justify-content: left;
+  align-items: left;
+} */
+/* table {
+  width: 100%;
+  overflow: scroll;
+}
+
+
+
+td, th {
+  width: 35%;
+  height: 100%;
+}
+
+id
+{
+  align-content: center;
+  align-items: center;
+}
+
+
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+} */
